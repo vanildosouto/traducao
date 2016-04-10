@@ -1,4 +1,4 @@
-# PHP Manual Brazilian Portuguese / Git/GitHub bridge
+# PHP Manual Brazilian Portuguese - Git/GitHub bridge
 
 Este projeto visa replicar o repositório dos fontes do [Manual do PHP](https://secure.php.net/manual/pt_BR/index.php), utilizando a interface Git/GitHub, e assim facilitar as contribuições.
 
