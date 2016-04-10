@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EN-Revision: n/a Maintainer: fernandoc Status: ready -->
+<section xml:id="mysql.installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &reftitle.install;
+
+ <para xml:id="mysql.configure">
+  Para compilar, simplesmente use a opção de configuração 
+  <option role="configure">--with-mysql[=DIR]</option>
+  aonde o parãmetro opcional <literal>[DIR]</literal> aponta para o
+  diretório onde o MySQL esta instalado.
+ </para>
+ <para> 
+  Mesmo sendo esta extensão MySQL compativel com MySQL 4.1.0 e posterior, 
+  ela não suporta a funcionalidade extra que estas versões proveem. 
+  Para isto, use a extensão <link linkend="ref.mysqli">MySQLi</link>.
+ </para>
+ <para>
+  Se você quiser instalar a extensão mysql em conjuno com a extnsão mysqli
+  você deve usar a mesma biblioteca de cliente para evitar quaisquer conflitos.
+ </para>
+
+ <section xml:id="mysql.installation.linux">
+  <title>Instalação em Sistemas Linux</title>
+  <section>
+   <title>PHP 4</title>
+   <para>
+    A opção <option role="configure">--with-mysql</option> é
+    ativada por padrão. Este é o funcionamento padrão e pode ser desabilitado
+    com a opção de configuração <option role="configure">--without-mysql</option>.
+    Se o MySQL for ativado sem especificar o caminho para o diretório de 
+    instalação do MySQL, o PHP irá usar a biblioteca de cliente MySQL embutida.
+   </para>
+   <para>
+    Usuários que executam outras aplicações que usam o MySQL (por exemplo,
+    auth-mysql) não devem usar a biblioteca embutida, mas ao invés especificar
+    o caminho para o diretório de instalação do MySQL, assim:
+    <option role="configure">--with-mysql=/path/to/mysql</option>.
+    Isto irá forçar o PHP a usar as bibliotecas de cliente instaladas pelo MySQL, assim
+    evitando quaisquer conflitos.
+   </para>
+  </section>
+  <section>
+   <title>PHP 5+</title>
+   <para>
+    O MySQL não esta ativo por padrão, nem a biblioteca MySQL é
+    embutida com o PHP. Leia este <link linkend="faq.databases.mysql.php5">
+    FAQ</link> para detalhes sobre o motivo. Use a opção de configuração 
+    <option role="configure">--with-mysql[=DIR]</option>
+    Para incluir o suporte a MySQL.
+    Você pode baixar <emphasis>cabeçalhos e bibliotecas</emphasis> a partir de 
+    <link xlink:href="&url.mysql;">MySQL</link>.
+   </para>
+  </section>
+ </section>
+
+ <section xml:id="mysql.installation.windows">
+  <title>Instalação em Sistemas Windows</title>
+  <section>
+   <title>PHP 4</title>
+   <para>
+    A extensão do PHP MySQL é compilada no PHP.
+   </para>
+  </section>
+  <section>
+   <title>PHP 5+</title>
+   <para>
+    O MySQL não é mais ativado por padrão, assim a DLL 
+    <filename>php_mysql.dll</filename> deve ser ativada dentro do 
+    &php.ini;. Também,  o PHP precisa acessar a biblioteca de cliente do MySQL. Um arquivo
+    chamado <filename>libmysql.dll</filename> é incluso na distribuição PHP do Windows
+    e para permitir que o PHP converse com o MySQL este arquivo precisa estar
+    disponível para o sistema Windows na variavél de ambiênte <envar>PATH</envar>. Veja o Faq
+    intitulado "<link linkend="faq.installation.addtopath">Como eu adiciono o meu 
+    diretório PHP no PATh no Windows</link>" para informação de como fazer isto.
+    Mesmo que copiar <filename>libmysql.dll</filename> para o diretório de 
+    sistema do Windows também (porque o diretório de sistema esta por padrão
+    no <envar>PATH</envar> do sistema), isto não é recomendado.
+   </para>
+   <para>
+    Do mesmo jeito que ativar qualquer extensão do PHP (como 
+    <filename>php_mysql.dll</filename>), a diretiva do PHP
+    <link linkend="ini.extension-dir">extension_dir</link> deve estar definida para o diretório
+    aonde as extensões do PHP estão localizadas. Veja também 
+    <link linkend="install.windows.manual">Instruções de instalação Manual
+    no Windows</link>. Como um exemplo de valor para extension_dir para o PHP 5 é
+    <literal>c:\php\ext</literal>
+   </para>
+   <note>
+    <para>
+     Se ao iniciar o servidor web acontecer um erro similar a este:
+     <literal>"Unable to load dynamic library './php_mysql.dll'"</literal>, 
+     isto é porque <filename>php_mysql.dll</filename> e/ou 
+     <filename>libmysql.dll</filename> não pode ser encontrada pelo sistema.
+    </para>
+   </note>
+  </section>
+ </section>
+
+ <section xml:id="mysql.installation.notes">
+  <title>Notas de Instalação do MySQL</title>
+   <warning>
+    <para>
+     Quebras e problemas de inicilização do PHP podem ser encontrados ao
+     carregar esta extensão em conjunto com a extensão recode.
+     Veja a extensão <link linkend="ref.recode">recode</link> para
+     maiores informações.
+    </para>
+   </warning>
+   <note>
+    <para>
+     Se você precisar de conjuntos de caracteres diferntes de <emphasis>latin</emphasis> 
+     (padrão), você terá que instalar um libmysql externa (não embutida) com o
+     suporte ao conjunto de caracteres compilado.
+    </para>
+   </note>
+ </section>
+</section>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:1
+sgml-indent-data:t
+indent-tabs-mode:nil
+sgml-parent-document:nil
+sgml-default-dtd-file:"~/.phpdoc/manual.ced"
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+vim600: syn=xml fen fdm=syntax fdl=2 si
+vim: et tw=78 syn=sgml
+vi: ts=1 sw=1
+-->
