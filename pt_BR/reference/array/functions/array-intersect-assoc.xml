@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 331477 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, fabioluciano -->
+<!-- EN-Revision: 331477 Maintainer: none Status: ready --><!-- CREDITS: felipe, fabioluciano -->
 <refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.array-intersect-assoc">
  <refnamediv>
   <refname>array_intersect_assoc</refname>
@@ -17,7 +17,7 @@
   <simpara>
    <function>array_intersect_assoc</function> retorna um array
    contendo todos os valores de <parameter>array1</parameter>
-   que estão presentes em todos os argumentos. Note que estas chaves são usadas na
+   que estão presentes em todos os argumentos. Note que estas chaves também são usadas na
    comparação diferindo de <function>array_intersect</function>.
   </simpara>
  </refsect1>
