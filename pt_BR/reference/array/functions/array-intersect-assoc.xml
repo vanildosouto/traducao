@@ -12,7 +12,7 @@
    <type>array</type><methodname>array_intersect_assoc</methodname>
    <methodparam><type>array</type><parameter>array1</parameter></methodparam>
    <methodparam><type>array</type><parameter>array2</parameter></methodparam>
-   <methodparam choice="opt"><type>array</type><parameter> ...</parameter></methodparam>
+   <methodparam choice="opt"><type>array</type><parameter>...</parameter></methodparam>
   </methodsynopsis>
   <simpara>
    <function>array_intersect_assoc</function> retorna um array
