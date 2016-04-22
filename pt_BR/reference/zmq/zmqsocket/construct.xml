@@ -11,16 +11,16 @@
   &reftitle.description;
   <methodsynopsis>
    <methodname>ZMQSocket::__construct</methodname>
-   <methodparam><type>ZMQContext</type><parameter>contexto</parameter></methodparam>
-   <methodparam><type>int</type><parameter>tipo</parameter></methodparam>
-   <methodparam choice="opt"><type>string</type><parameter>id_persistente</parameter><initializer>null</initializer></methodparam>
-   <methodparam choice="opt"><type>callback</type><parameter>se_novo_socket</parameter><initializer>null</initializer></methodparam>
+   <methodparam><type>ZMQContext</type><parameter>context</parameter></methodparam>
+   <methodparam><type>int</type><parameter>type</parameter></methodparam>
+   <methodparam choice="opt"><type>string</type><parameter>persistent_id</parameter><initializer>null</initializer></methodparam>
+   <methodparam choice="opt"><type>callback</type><parameter>on_new_socket</parameter><initializer>null</initializer></methodparam>
   </methodsynopsis>
   <para>
-   Constrói um objeto ZMQSocket. O parâmetro <parameter>id_persistente</parameter> pode ser usado para alocar um socket
+   Constrói um objeto ZMQSocket. O parâmetro <parameter>persistent_id</parameter> pode ser usado para alocar um socket
    persistente. Um socket persistente deve ser alocado a partir de um contexto persistente e permanece conectado ao longo de várias requisições.
-   O parâmetro <parameter>id_persistente</parameter> pode ser usado para chamar novamente o mesmo socket ao longo de várias requisições. O
-   parâmetro <parameter>se_novo_socket</parameter> é chamado apenas quando uma nova instância de socket for criada.
+   O parâmetro <parameter>persistent_id</parameter> pode ser usado para chamar novamente o mesmo socket ao longo de várias requisições. O
+   parâmetro <parameter>on_new_socket</parameter> é chamado apenas quando uma nova instância de socket for criada.
   </para>
  </refsect1>
 
@@ -29,7 +29,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>contexto</parameter></term>
+     <term><parameter>context</parameter></term>
      <listitem>
       <para>
        Um objeto ZMQContext.
@@ -37,7 +37,7 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>tipo</parameter></term>
+     <term><parameter>type</parameter></term>
      <listitem>
       <para>
        O tipo do socket. Consulte as constantes <constant>ZMQ::SOCKET_*</constant>.
@@ -45,16 +45,16 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>id_persistente</parameter></term>
+     <term><parameter>persistent_id</parameter></term>
      <listitem>
       <para>
-       Se o parâmetro <parameter>id_persistente</parameter> for especificado, o socket será persistente ao longo de várias requisições.
-       Se o parâmetro <parameter>contexto</parameter> não for persistente, o socket volta para o modo não persistente.
+       Se o parâmetro <parameter>persistent_id</parameter> for especificado, o socket será persistente ao longo de várias requisições.
+       Se o parâmetro <parameter>context</parameter> não for persistente, o socket volta para o modo não persistente.
       </para>
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>se_novo_socket</parameter></term>
+     <term><parameter>on_new_socket</parameter></term>
      <listitem>
       <para>
        Uma finção de retorno que é executada quando uma nova instância de socket é criada. Essa função não é invocada
@@ -111,7 +111,7 @@ echo "Mensagem recebida: {$mensagem}\n";
     Assinatura da função de retorno
     <note>
      <para>
-      function novo_socket_cb(ZMQSocket $socket, string $id_persistente = null);
+      function novo_socket_cb(ZMQSocket $socket, string $persistent_id = null);
      </para>
     </note>
    </para>

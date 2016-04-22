@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>mixed</type><methodname>ZMQSocket::getSockOpt</methodname>
-   <methodparam><type>string</type><parameter>chave</parameter></methodparam>
+   <methodparam><type>string</type><parameter>key</parameter></methodparam>
   </methodsynopsis>
   <para>
    Retorna o valor de uma opção de socket.
@@ -23,7 +23,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>chave</parameter></term>
+     <term><parameter>key</parameter></term>
      <listitem>
       <para>
        Um inteiro representando a opção.
@@ -38,7 +38,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   Retorna tanto uma &string; ou um &integer; dependendo do parâmetro <parameter>chave</parameter>. Lança
+   Retorna tanto uma &string; ou um &integer; dependendo do parâmetro <parameter>key</parameter>. Lança
    uma exceção ZMQSocketException caso haja erro.
   </para>
  </refsect1>

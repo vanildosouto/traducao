@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQSocket</type><methodname>ZMQSocket::disconnect</methodname>
-   <methodparam><type>string</type><parameter>destino</parameter></methodparam>
+   <methodparam><type>string</type><parameter>dsn</parameter></methodparam>
   </methodsynopsis>
   <para>
    Desconecta o socket de um destino remoto previamente conectado. O destino é definido no formato
@@ -24,7 +24,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>destino</parameter></term>
+     <term><parameter>dsn</parameter></term>
      <listitem>
       <para>
        O destino conectado, por exemplo <literal>transporte://endereco</literal>.

@@ -11,8 +11,8 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQSocket</type><methodname>ZMQSocket::bind</methodname>
-   <methodparam><type>string</type><parameter>destino</parameter></methodparam>
-   <methodparam choice="opt"><type>boolean</type><parameter>forcar</parameter><initializer>false</initializer></methodparam>
+   <methodparam><type>string</type><parameter>dsn</parameter></methodparam>
+   <methodparam choice="opt"><type>boolean</type><parameter>force</parameter><initializer>false</initializer></methodparam>
   </methodsynopsis>
   <para>
    Associa o socket a um destino. O destino é definido no formato <literal>transporte://endereco</literal>, onde
@@ -25,7 +25,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>destino</parameter></term>
+     <term><parameter>dsn</parameter></term>
      <listitem>
       <para>
        O destino que será associado, por exemplo <literal>transporte://endereco</literal>.
@@ -33,7 +33,7 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>forcar</parameter></term>
+     <term><parameter>force</parameter></term>
      <listitem>
       <para>
        Tenta associar ao destino mesmo que o socket já tenha sido associado ao destino informado.

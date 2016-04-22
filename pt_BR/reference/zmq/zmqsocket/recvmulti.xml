@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>string</type><methodname>ZMQSocket::recvMulti</methodname>
-   <methodparam choice="opt"><type>integer</type><parameter>modo</parameter><initializer>0</initializer></methodparam>
+   <methodparam choice="opt"><type>integer</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
   <para>
    Recebe um array de mensagem com várias partes de um socket. Por padrão a recepção será bloqueada até que uma mensagem esteja disponível, a menos que
@@ -24,7 +24,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>modo</parameter></term>
+     <term><parameter>mode</parameter></term>
      <listitem>
       <para>
        Passa indicadores de modo para receber mensagens com várias partes ou operações não bloqueantes.

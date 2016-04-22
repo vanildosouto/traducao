@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>string</type><methodname>ZMQSocket::recv</methodname>
-   <methodparam choice="opt"><type>integer</type><parameter>modo</parameter><initializer>0</initializer></methodparam>
+   <methodparam choice="opt"><type>integer</type><parameter>mode</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
   <para>
    Recebe uma mensagem a partir de um socket. Por padrão a recepção será bloqueada até que uma mensagem esteja disponível, a menos que
@@ -26,7 +26,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>modo</parameter></term>
+     <term><parameter>mode</parameter></term>
      <listitem>
       <para>
        Passa indicadores para a recepção de mensagens com várias partes ou oerações não bloqueantes.
