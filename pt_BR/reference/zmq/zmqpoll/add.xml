@@ -11,8 +11,8 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>string</type><methodname>ZMQPoll::add</methodname>
-   <methodparam><type>mixed</type><parameter>entrada</parameter></methodparam>
-   <methodparam><type>integer</type><parameter>tipo</parameter></methodparam>
+   <methodparam><type>mixed</type><parameter>entry</parameter></methodparam>
+   <methodparam><type>integer</type><parameter>type</parameter></methodparam>
   </methodsynopsis>
   <para>
    Adiciona um novo item na lista de pesquisa e retorna o id interno do item adicionado. O item pode ser removido
@@ -25,7 +25,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>entrada</parameter></term>
+     <term><parameter>entry</parameter></term>
      <listitem>
       <para>
        Um objeto ZMQSocket ou um recurso de fluxo (stream) PHP
@@ -33,7 +33,7 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>tipo</parameter></term>
+     <term><parameter>type</parameter></term>
      <listitem>
       <para>
        Define para qual atividade o socket será consultado.

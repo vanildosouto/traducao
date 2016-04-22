@@ -11,13 +11,13 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>integer</type><methodname>ZMQPoll::poll</methodname>
-   <methodparam><type>array</type><parameter role="reference">leitura</parameter></methodparam>
-   <methodparam><type>array</type><parameter role="reference">escrita</parameter></methodparam>
+   <methodparam><type>array</type><parameter role="reference">readable</parameter></methodparam>
+   <methodparam><type>array</type><parameter role="reference">writable</parameter></methodparam>
    <methodparam choice="opt"><type>integer</type><parameter>tempo_limite</parameter><initializer>-1</initializer></methodparam>
   </methodsynopsis>
   <para>
    Consulta os itens na lista de pesquisa atual. Os itens de leitura e escrita são retornados nos
-   parâmetros <parameter>leitura</parameter> e <parameter>escrita</parameter>.
+   parâmetros <parameter>readable</parameter> e <parameter>writable</parameter>.
    A função <function>ZMQPoll::getLastErrors</function> pode ser usada para verificar se houveram erros.
   </para>
  </refsect1>
@@ -27,19 +27,19 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>leitura</parameter></term>
+     <term><parameter>readable</parameter></term>
      <listitem>
       <para>
-       Um array (vetor) onde os ZMQSockets de leitura/recursos de fluxo (streams) PHP são retornados. O array
+       Um array (vetor) onde os ZMQSockets de leitura ou recursos de fluxo (streams) PHP são retornados. O array
        será esvaziado no inicio da operação.
       </para>
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>escrita</parameter></term>
+     <term><parameter>writable</parameter></term>
      <listitem>
       <para>
-       Um array (vetor) onde os ZMQSockets de escrita/recursos de fluxo (streams) PHP são retornados. O array
+       Um array (vetor) onde os ZMQSockets de escrita ou recursos de fluxo (streams) PHP são retornados. O array
        será esvaziado no inicio da operação.
       </para>
      </listitem>
