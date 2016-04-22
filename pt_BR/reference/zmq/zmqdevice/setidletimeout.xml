@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQDevice</type><methodname>ZMQDevice::setIdleTimeout</methodname>
-   <methodparam><type>integer</type><parameter>tempo_limite</parameter></methodparam>
+   <methodparam><type>integer</type><parameter>timeout</parameter></methodparam>
   </methodsynopsis>
   <para>
    Define o tempo limite da função de retorno de inatividade. A função de retorno de inatividade é invocada periodicamente quando o dispositivo está
@@ -23,7 +23,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>tempo_limite</parameter></term>
+    <term><parameter>timeout</parameter></term>
     <listitem>
      <para>
       O valor do tempo limite da função de retorno de inatividade.

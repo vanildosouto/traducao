@@ -11,9 +11,9 @@
   &reftitle.description;
   <methodsynopsis>
    <methodname>ZMQDevice::__construct</methodname>
-   <methodparam><type>ZMQSocket</type><parameter>interface</parameter></methodparam>
-   <methodparam><type>ZMQSocket</type><parameter>retaguarda</parameter></methodparam>
-   <methodparam choice="opt"><type>ZMQSocket</type><parameter>ouvinte</parameter></methodparam>
+   <methodparam><type>ZMQSocket</type><parameter>frontend</parameter></methodparam>
+   <methodparam><type>ZMQSocket</type><parameter>backend</parameter></methodparam>
+   <methodparam choice="opt"><type>ZMQSocket</type><parameter>listener</parameter></methodparam>
   </methodsynopsis>
   <para>
    "Dispositivos ØMQ podem itermediar endereços, serviços, filas, ou qualquer outra abstração que se deseje definir sobre a mensagem e as camadas de socket." -- zguide
@@ -24,7 +24,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>interface</parameter></term>
+    <term><parameter>frontend</parameter></term>
     <listitem>
      <para>
       Parametro de entrada dos dispositivos. Geralmente de onde as mensagens
@@ -33,7 +33,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>retaguarda</parameter></term>
+    <term><parameter>backend</parameter></term>
     <listitem>
      <para>
        Parâmetro de destino dos dispositivos. Geralmente para onde as mensagens
@@ -42,10 +42,10 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>ouvinte</parameter></term>
+    <term><parameter>listener</parameter></term>
     <listitem>
      <para>
-       Um socket ouvinte, que recebe uma cópia de todas as mensagens indo em ambas direções.
+       Um socket ouvinte (listener), que recebe uma cópia de todas as mensagens indo em ambas direções.
        O tipo desse socket deve ser SUB, PULL ou DEALER.
      </para>
     </listitem>

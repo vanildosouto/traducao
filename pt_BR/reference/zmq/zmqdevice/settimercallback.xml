@@ -11,16 +11,16 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQDevice</type><methodname>ZMQDevice::setTimerCallback</methodname>
-   <methodparam><type>callable</type><parameter>funcao_retorno</parameter></methodparam>
-   <methodparam><type>integer</type><parameter>tempo_limite</parameter></methodparam>
-   <methodparam choice="opt"><type>mixed</type><parameter>dados_usuario</parameter></methodparam>
+   <methodparam><type>callable</type><parameter>cb_func</parameter></methodparam>
+   <methodparam><type>integer</type><parameter>timeout</parameter></methodparam>
+   <methodparam choice="opt"><type>mixed</type><parameter>user_data</parameter></methodparam>
   </methodsynopsis>
   <para>
    Define a função de retorno do temporizador. A função de retorno do temporizados será invocada após a passagem do tempo
    limite. A diferença entre as funções de retorno de inatividade e do temporizador é que a função de retorno por inatividade é invocada
    apenas quando o dispositivo está ocioso.
 
-   A assinatura da função de retorno é funcao_retorno(mized $dados_usuario). Adicionada à extensão ZMQ na versão 1.1.0.
+   A assinatura da função de retorno é cb_func(mized $user_data). Adicionada à extensão ZMQ na versão 1.1.0.
   </para>
  </refsect1>
 
@@ -28,7 +28,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>funcao_retorno</parameter></term>
+    <term><parameter>cb_func</parameter></term>
     <listitem>
      <para>
       Função de retorno que será invocada quando o dispositido estiver ocioso. Retornando falso
@@ -38,7 +38,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>tempo_limite</parameter></term>
+    <term><parameter>timeout</parameter></term>
     <listitem>
      <para>
       Com que frequência invocar a função de retorno em milissegundos. A função de retorno de inatividade é invocada
@@ -49,7 +49,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>dados_usuario</parameter></term>
+    <term><parameter>user_data</parameter></term>
     <listitem>
      <para>
       Dados adicionais pasados para a função de retorno.

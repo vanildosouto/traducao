@@ -11,16 +11,16 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQDevice</type><methodname>ZMQDevice::setIdleCallback</methodname>
-   <methodparam><type>callable</type><parameter>funcao_retorno</parameter></methodparam>
-   <methodparam><type>integer</type><parameter>tempo_limite</parameter></methodparam>
-   <methodparam choice="opt"><type>mixed</type><parameter>dados_usuario</parameter></methodparam>
+   <methodparam><type>callable</type><parameter>cb_func</parameter></methodparam>
+   <methodparam><type>integer</type><parameter>timeout</parameter></methodparam>
+   <methodparam choice="opt"><type>mixed</type><parameter>user_data</parameter></methodparam>
   </methodsynopsis>
   <para>
    Define a função de retorno de inatividade. Se o tempo limite de inatividade for definido, a função de retorno
    será chamada se a consulta interna ficar sem eventos durante o tempo limite. Se a função de retorno
    retornar falso ou um valor que seja avaliado para falso, o dispositivo é interrompido.
 
-   A assinatura da função de retorno é funcao_retorno(mixed $dados_usuario).
+   A assinatura da função de retorno é cb_func(mixed $user_data).
   </para>
  </refsect1>
 
@@ -28,7 +28,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>funcao_retorno</parameter></term>
+    <term><parameter>cb_func</parameter></term>
     <listitem>
      <para>
       A função de retorno que será invocada de o dispositivo ficar inativo. Retornando falso
@@ -38,7 +38,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>tempo_limite</parameter></term>
+    <term><parameter>timeout</parameter></term>
     <listitem>
      <para>
       Com que frequência invocar a função de retorno em milissegundos. A função de retorno de inatividade é invocada
@@ -49,7 +49,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>dados_usuario</parameter></term>
+    <term><parameter>user_data</parameter></term>
     <listitem>
      <para>
       Dados adicionais pasados para a função de retorno.
