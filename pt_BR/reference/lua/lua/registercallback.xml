@@ -11,11 +11,11 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>mixed</type><methodname>Lua::registerCallback</methodname>
-   <methodparam><type>string</type><parameter>nome</parameter></methodparam>
-   <methodparam><type>callable</type><parameter>funcao</parameter></methodparam>
+   <methodparam><type>string</type><parameter>name</parameter></methodparam>
+   <methodparam><type>callable</type><parameter>function</parameter></methodparam>
   </methodsynopsis>
   <para>
-    Registra uma função PHP no interpretador Lua como uma função chamada "$nome"
+    Registra uma função PHP no interpretador Lua como uma função chamada "$name"
   </para>
 
  </refsect1>
@@ -24,7 +24,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>nome</parameter></term>
+    <term><parameter>name</parameter></term>
     <listitem>
      <para>
 
@@ -32,7 +32,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>funcao</parameter></term>
+    <term><parameter>function</parameter></term>
     <listitem>
      <para>
       Uma função PHP válida

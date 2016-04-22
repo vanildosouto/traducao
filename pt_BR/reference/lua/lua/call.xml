@@ -18,9 +18,9 @@
   </methodsynopsis>
   <methodsynopsis>
    <modifier>public</modifier> <type>mixed</type><methodname>Lua::__call</methodname>
-   <methodparam><type>callable</type><parameter>funcao_lua</parameter></methodparam>
-   <methodparam choice="opt"><type>array</type><parameter>argumentos</parameter></methodparam>
-   <methodparam choice="opt"><type>int</type><parameter>usa_self</parameter><initializer>0</initializer></methodparam>
+   <methodparam><type>callable</type><parameter>lua_func</parameter></methodparam>
+   <methodparam choice="opt"><type>array</type><parameter>args</parameter></methodparam>
+   <methodparam choice="opt"><type>int</type><parameter>use_self</parameter><initializer>0</initializer></methodparam>
   </methodsynopsis>
   <para>
 
@@ -34,7 +34,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>funcao_lua</parameter></term>
+    <term><parameter>lua_func</parameter></term>
     <listitem>
      <para>
        Nome da função lua
@@ -42,7 +42,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>argumentos</parameter></term>
+    <term><parameter>args</parameter></term>
     <listitem>
      <para>
        Argumentos passados para a função Lua
@@ -50,7 +50,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>usa_self</parameter></term>
+    <term><parameter>use_self</parameter></term>
     <listitem>
      <para>
        Indica o uso de <literal>self</literal>

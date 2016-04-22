@@ -11,8 +11,8 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>mixed</type><methodname>Lua::assign</methodname>
-   <methodparam><type>string</type><parameter>nome</parameter></methodparam>
-   <methodparam><type>string</type><parameter>valor</parameter></methodparam>
+   <methodparam><type>string</type><parameter>name</parameter></methodparam>
+   <methodparam><type>string</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
 
@@ -26,7 +26,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>nome</parameter></term>
+    <term><parameter>name</parameter></term>
     <listitem>
      <para>
 
@@ -34,7 +34,7 @@
     </listitem>
    </varlistentry>
    <varlistentry>
-    <term><parameter>valor</parameter></term>
+    <term><parameter>value</parameter></term>
     <listitem>
      <para>
 
