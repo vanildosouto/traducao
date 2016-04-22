@@ -11,7 +11,7 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>void</type><methodname>LuaClosure::__invoke</methodname>
-   <methodparam><type>mixed</type><parameter>argumentos</parameter></methodparam>
+   <methodparam><type>mixed</type><parameter>arg</parameter></methodparam>
    <methodparam choice="opt"><type>mixed</type><parameter>...</parameter></methodparam>
   </methodsynopsis>
   <para>
@@ -26,7 +26,7 @@
   &reftitle.parameters;
   <variablelist>
    <varlistentry>
-    <term><parameter>argumentos</parameter></term>
+    <term><parameter>arg</parameter></term>
     <listitem>
      <para>
 
