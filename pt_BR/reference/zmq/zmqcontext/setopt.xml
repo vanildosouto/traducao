@@ -11,11 +11,11 @@
   &reftitle.description;
   <methodsynopsis>
    <modifier>public</modifier> <type>ZMQContext</type><methodname>ZMQContext::setOpt</methodname>
-   <methodparam><type>integer</type><parameter>chave</parameter></methodparam>
-   <methodparam><type>mixed</type><parameter>valor</parameter></methodparam>
+   <methodparam><type>integer</type><parameter>key</parameter></methodparam>
+   <methodparam><type>mixed</type><parameter>value</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Define uma opção de contexto ZMQ. O tipo do parâmetro <parameter>valor</parameter> depende do parâmetro <parameter>chave</parameter>.
+   Define uma opção de contexto ZMQ. O tipo do parâmetro <parameter>value</parameter> depende do parâmetro <parameter>key</parameter>.
    Consulte os <link linkend="zmq.constants">Tipos de Constantes ZMQ</link> para mais informações.
   </para>
  </refsect1>
@@ -25,7 +25,7 @@
   <para>
    <variablelist>
     <varlistentry>
-     <term><parameter>chave</parameter></term>
+     <term><parameter>key</parameter></term>
      <listitem>
       <para>
        Uma das constantes <constant>ZMQ::CTXOPT_*</constant>.
@@ -33,7 +33,7 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>valor</parameter></term>
+     <term><parameter>value</parameter></term>
      <listitem>
       <para>
        O valor do parâmetro.

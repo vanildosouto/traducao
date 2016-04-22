@@ -12,7 +12,7 @@
   <methodsynopsis>
    <methodname>ZMQContext::__construct</methodname>
    <methodparam choice="opt"><type>integer</type><parameter>io_threads</parameter><initializer>1</initializer></methodparam>
-   <methodparam choice="opt"><type>boolean</type><parameter>e_persistente</parameter><initializer>true</initializer></methodparam>
+   <methodparam choice="opt"><type>boolean</type><parameter>is_persistent</parameter><initializer>true</initializer></methodparam>
   </methodsynopsis>
   <para>
    Constrói um novo contexto ZMQ. O contexto é usado para inicializar os sockets. Um contexto persistente é necessário
@@ -33,7 +33,7 @@
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term><parameter>e_persistent</parameter></term>
+     <term><parameter>is_persistent</parameter></term>
      <listitem>
       <para>
        Indica se o contexto é persistente. Um contexto persistente é armazenado
