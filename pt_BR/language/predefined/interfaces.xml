@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- EN-Revision: 337170 Maintainer: royopa Status: ready --><!-- CREDITS: royopa -->
+
 <part xml:id="reserved.interfaces" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Interfaces e Classes pré-definidas</title>
 
