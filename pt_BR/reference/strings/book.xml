@@ -1,27 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 297028 Maintainer: felipe Status: ready -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EN-Revision: 330340 Maintainer: felipe Status: ready --><!-- CREDITS: felipe, rogeriopradoj -->
 
 <book xml:id="book.strings" xmlns="http://docbook.org/ns/docbook">
+ <?phpdoc extension-membership="core" ?>
  <title>Strings</title>
 
  <preface xml:id="intro.strings">
   &reftitle.intro;
   <para>
-   Todas estas funções manipulam strings de vários meios.
-   Algumas seções mais especializadas podem ser encontradas nas seções de
-   expressões regulares e <link linkend="book.url">Funções de URL</link>.
+   Todas estas funções manipulam strings de várias formas. Algumas
+   seções mais especializadas podem ser encontradas nas seções de
+   expressões regulares e <link linkend="book.url">manipulação de URLs</link>.
   </para>
   <para>
-   Para informação de como as strings funcionam, especialmente sobre
-   o uso de apóstrofo, aspas e sequências de escape veja
-   <link linkend="language.types.string">Strings</link> na seção
-   <link linkend="language.types">Tipos</link> do manual.
+   Para informações sobre como as strings funcionam, especialmente sobre
+   o uso de aspas simples, aspas duplas e sequências de escape veja
+   o verbete sobre <link linkend="language.types.string">Strings</link>
+   na seção <link linkend="language.types">Tipos</link>
+   do manual.
   </para>
  </preface>
 
  &reference.strings.setup;
  &reference.strings.constants;
  &reference.strings.reference;
+
+<appendix xmlns="http://docbook.org/ns/docbook" xml:id="changelog.strings">
+ <title>&ChangelogListingTitle;</title>
+ <para>&ChangelogListingDescription;</para>
+ <?phpdoc generate-changelog-for="ref.strings"?>
+</appendix>
 
 </book>
 
