@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 331319 Maintainer: ae Status: ready --><!-- CREDITS klaussilveira -->
+<!-- EN-Revision: 331319 Maintainer: ae Status: ready --><!-- CREDITS: klaussilveira -->
 
 <!-- Part titles used mostly in manual.xml itself -->
 <!ENTITY PHPManual         "Manual do PHP">

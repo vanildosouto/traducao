@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 337346 Maintainer: ae Status: ready --><!-- CREDITS fernandoc -->
+<!-- EN-Revision: 337346 Maintainer: ae Status: ready --><!-- CREDITS: fernandoc -->
 <refentry xml:id="function.dl" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>dl</refname>
