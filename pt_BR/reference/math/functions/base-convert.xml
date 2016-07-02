@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 338497 Maintainer: ae Status: ready --><!-- CREDITS: rarruda,ae -->
+<!-- EN-Revision: 339532 Maintainer: ae Status: ready --><!-- CREDITS: rarruda,ae -->
 <refentry xml:id="function.base-convert" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>base_convert</refname>
@@ -42,7 +42,8 @@
      <term><parameter>number</parameter></term>
      <listitem>
       <para>
-       O número para converter
+       The number to convert. Quaisquer caracteres inválidos em
+       <parameter>number</parameter> serão ignorados silenciosamente.
       </para>
      </listitem>
     </varlistentry>
