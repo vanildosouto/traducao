@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 334698 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, narigone, fabioluciano -->
+<!-- EN-Revision: 339625 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, narigone, fabioluciano -->
  <sect1 xml:id="language.oop5.interfaces" xmlns="http://docbook.org/ns/docbook">
   <title>Interfaces de Objetos</title>
   <para>
@@ -8,9 +8,9 @@
    métodos serão tratados.
   </para>
   <para>
-   Interfaces são definidas usando a palavra-chave <literal>interface</literal>, da mesma maneira que
-   uma classe comum, mas sem nenhum dos métodos tendo seu conteúdo
-   definido.
+   Interfaces são definidas da mesma forma que classes, mas com a palavra-chave <literal>interface</literal>
+   substituindo <literal>class</literal> e com nenhum dos métodos tendo
+   seu conteúdo definido.
   </para>
   <para>
    Todos os métodos declarados em uma interface devem ser públicos, essa é a natureza
