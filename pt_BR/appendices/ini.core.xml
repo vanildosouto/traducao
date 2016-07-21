@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 339349 Maintainer: ae Status: ready --><!-- CREDITS: ae, fibbarth, fabioluciano, rogeriopradoj -->
+<!-- EN-Revision: 339595 Maintainer: ae Status: ready --><!-- CREDITS: ae, fibbarth, fabioluciano, rogeriopradoj -->
 
  <section xml:id="ini.core" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Descrição das principais diretivas do &php.ini;</title>
@@ -242,7 +242,9 @@
       </term>
       <listitem>
        <simpara>
-        O número de dígitos significativos mostrados em números de ponto flutuante.
+        O número de dígitos significativos exibidos em números de ponto flutuante.
+        <literal>-1</literal> significa que um algoritmo avançado para arredondamento
+        será utilizado.
        </simpara>
       </listitem>
      </varlistentry>
@@ -255,6 +257,8 @@
       <listitem>
        <simpara>
         O número de dígitos significativos armazenados durante a serialização de números de pontos flutuantes.
+        <literal>-1</literal> significa que um algoritmo avançado para arredondamento
+        será utilizado.
        </simpara>
       </listitem>
      </varlistentry>
