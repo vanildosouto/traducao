@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 339402 Maintainer: fabioluciano Status: ready --><!-- CREDITS: thiago, ae, fabioluciano -->
+<!-- EN-Revision: 339750 Maintainer: fabioluciano Status: ready --><!-- CREDITS: thiago, ae, fabioluciano -->
 <chapter xml:id="install.windows" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
   <title>Instalação no Windows</title>
   <para>
@@ -30,7 +30,7 @@
     </itemizedlist>
   </para>
 
-  <sect1>
+  <sect1 xml:id="install.windows.requirements">
     <title>Requisitos de instalação</title>
 
     <para>
@@ -71,7 +71,7 @@
 
   </sect1>
 
-  <sect1>
+  <sect1 xml:id="install.windows.pecl">
     <title>PECL</title>
 
     <para>Extensões PECL são pré-compiladas no Windows e disponíveis em: <link xlink:href="http://windows.php.net/downloads/pecl/releases/">http://windows.php.net/downloads/pecl/releases/</link>
