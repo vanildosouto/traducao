@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 338308 Maintainer: ae Status: ready -->
+<!-- EN-Revision: 339882 Maintainer: ae Status: ready -->
 <refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.max">
  <refnamediv>
   <refname>max</refname>
@@ -26,11 +26,17 @@
    <para>
     Valores de diferentes tipos serão comparados utilizando as<link linkend="language.operators.comparison">
     regras padrões de comparação</link>. Por exemplo uma <type>string</type> não numérica será
-    comparada a um <type>integer</type> como se fosse <literal>0</literal>, mas várias
+    comparada a um <type>integer</type> como se fosse <literal>0</literal>, mas vários valores não numéricos
     <type>string</type>s serão comparadas alfabeticamente. O valor atual retornado terá o tipo
     original, sem nenhuma conversão.
    </para>
   </note>
+  <caution>
+   <simpara>
+    Cuidado ao passar argumentos de vários tipos, o que deixa o resultado de
+    <function>max</function> imprevisível.
+   </simpara>
+  </caution>
  </refsect1>
  <refsect1 role="parameters">
   &reftitle.parameters;

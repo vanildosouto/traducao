@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 339823 Maintainer: ae Status: ready --><!-- CREDITS: felipe,ae,klaussilveira,fabioluciano -->
+<!-- EN-Revision: 339877 Maintainer: ae Status: ready --><!-- CREDITS: felipe,ae,klaussilveira,fabioluciano -->
 <!-- Keep 'em sorted -->
 
 <!ENTITY changelog.randomseed '<row xmlns="http://docbook.org/ns/docbook"><entry>4.2.0</entry><entry>O gerador
