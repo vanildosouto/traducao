@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 323674 Maintainer: fernandoc Status: ready --><!-- CREDITS: surfmax -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.session-is-registered">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EN-Revision: n/a Maintainer: fernandoc Status: ready --><!-- CREDITS: surfmax -->
+<refentry xml:id="function.session-is-registered" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>session_is_registered</refname>
-  <refpurpose>Verifica se uma variável global está registrada numa sessão</refpurpose>
+  <refpurpose>Descobre se uma variável global está registrada numa sessão</refpurpose>
  </refnamediv>
  
  <refsect1 role="description">
@@ -13,9 +13,8 @@
    <methodparam><type>string</type><parameter>name</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Verifica se uma variável global está registrada numa sessão.
+   Verifica se há uma variável global é registrada na sessão.
   </para>
-  &warn.deprecated.function-5-3-0.removed-5-4-0;
  </refsect1>
 
  <refsect1 role="parameters">
@@ -47,18 +46,16 @@
   &reftitle.notes;
   <note>
    <para>
-    Se <varname>$_SESSION</varname> (ou <varname>$HTTP_SESSION_VARS</varname>
-    para PHP 4.0.6 ou inferior) é usada, use <function>isset</function> para checar se 
+    Se <varname>$_SESSION</varname> (ou <varname>$HTTP_SESSION_VARS</varname> para
+    PHP 4.0.6 ou inferior) é usada, use <function>isset</function> para checar se 
     uma variável está registrada em <varname>$_SESSION</varname>.
    </para>
   </note>
   <caution>
    <para>
-    Se você está usando <varname>$_SESSION</varname>
-    (ou <varname>$HTTP_SESSION_VARS</varname>), não utilize
-    <function>session_register</function>,
-    <function>session_is_registered</function> e
-    <function>session_unregister</function>.
+    Se você está usando <varname>$_SESSION</varname> (ou <varname>$HTTP_SESSION_VARS</varname>),
+    não utilize <function>session_register</function>,
+    <function>session_is_registered</function> e <function>session_unregister</function>.
    </para>
   </caution>
  </refsect1>

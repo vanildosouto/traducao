@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 339181 Maintainer: fernandoc Status: ready --><!-- CREDITS: surfmax -->
-<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.session-decode">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EN-Revision: 297028 Maintainer: fernandoc Status: ready --><!-- CREDITS: surfmax -->
+<refentry xml:id="function.session-decode" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>session_decode</refname>
-  <refpurpose>Decodifica dados de sessão de uma sessão codificada em formato string</refpurpose>
+  <refpurpose>Decifra dado de sessão de uma string</refpurpose>
  </refnamediv>
  
  <refsect1 role="description">
@@ -13,13 +13,9 @@
    <methodparam><type>string</type><parameter>data</parameter></methodparam>
   </methodsynopsis>
   <para>
-   <function>session_decode</function> decodifica os dado de sessão serializados fornecidos em
-   <parameter>$data</parameter> e preenche a super global $_SESSION
-   com o resultado.
-  </para>
-  <para>
-   Por padrão, o método de deserialização usado é interno do PHP e não é o mesmo que <function>unserialize</function>.
-   O método de deserialização pode ser configurado usando <link linkend="ini.session.serialize-handler">session.serialize_handler</link>.
+   <function>session_decode</function> decifra dado de sessão em
+   <parameter>data</parameter>, definindo variáveis guardadas na
+   sessão.
   </para>
  </refsect1>
 
@@ -31,7 +27,7 @@
      <term><parameter>data</parameter></term>
      <listitem>
       <para>
-       Os dados codificados para serem armazenados.
+       A informação codificada para ser armazenada.
       </para>
      </listitem>
     </varlistentry>
@@ -51,7 +47,6 @@
   <para>
    <simplelist>
     <member><function>session_encode</function></member>
-    <member><link linkend="ini.session.serialize-handler">session.serialize_handler</link></member>
    </simplelist>
   </para>
  </refsect1>
