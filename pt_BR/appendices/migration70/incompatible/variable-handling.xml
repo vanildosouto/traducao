@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 338511 Maintainer: fabioluciano Status: ready --><!-- CREDITS: fabioluciano -->
+<!-- EN-Revision: 339621 Maintainer: fabioluciano Status: ready --><!-- CREDITS: fabioluciano -->
 
 <sect2 xml:id="migration70.incompatible.variable-handling">
  <title>Mudanças na manipulação de variáveis</title>
