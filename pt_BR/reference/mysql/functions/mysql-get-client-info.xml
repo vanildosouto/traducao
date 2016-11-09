@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 297028 Maintainer: fernandoc Status: ready -->
-<refentry xml:id="function.mysql-get-client-info" xmlns="http://docbook.org/ns/docbook">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EN-Revision: 328734 Maintainer: fernandoc Status: ready -->
+<refentry xml:id="function.mysql-get-client-info" xmlns="http://docbook.org/ns/docbook" xmlns:phd="http://www.php.net/ns/phd">
  <refnamediv>
   <refname>mysql_get_client_info</refname>
   <refpurpose>Obtém informações do cliente MySQL</refpurpose>
  </refnamediv>
+
+ <refsynopsisdiv>
+  <warning>
+   &mysql.alternative.note;
+   <simplelist role="alternatives">
+    <member><function>mysqli_get_client_info</function></member>
+    <member><methodname phd:args="PDO::ATTR_CLIENT_VERSION">PDO::getAttribute</methodname></member>
+   </simplelist>
+  </warning>
+ </refsynopsisdiv>
 
  <refsect1 role="description">
   &reftitle.description;
@@ -13,8 +23,8 @@
    <void/>
   </methodsynopsis>
   <para>
-   <function>mysql_get_client_info</function> retorna uma string que representa
-   a versão da biblioteca de cliente.
+   <function>mysql_get_client_info</function> retorna uma string que
+   representa a versão da biblioteca do cliente.
   </para>
  </refsect1>
 
