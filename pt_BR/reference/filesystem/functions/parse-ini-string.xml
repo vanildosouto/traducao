@@ -74,8 +74,13 @@
   <note>
    <simpara>
     Existem algumas palavras reservadas que não podem ser usadas como
-    chaves em arquivos INI. Elas incluem: null, yes, no, true e false.
-    Valores null, no e false retornam como "", yes e true retormam como "1".
+    chaves em arquivos INI. Elas incluem: <literal>null</literal>, <literal>yes</literal>, 
+    <literal>no</literal>, <literal>true</literal> e <literal>false</literal>,
+    <literal>on</literal>, <literal>off</literal>, <literal>none</literal>.
+    Valores <literal>null</literal>, <literal>off</literal>, <literal>no</literal> e 
+    <literal>false</literal> retornam como <literal>""</literal>, e valores
+    <literal>on</literal>, <literal>yes</literal> e <literal>true</literal> resultam
+    em <literal>"1"</literal>, a menos que o modo <constant>INI_SCANNER_TYPED</constant> seja usado.
     Os caracteres <literal>{}|&amp;~![()"</literal> não podem ser usados em
     lugar algum na chave e têm significado especial no valor.
    </simpara>
