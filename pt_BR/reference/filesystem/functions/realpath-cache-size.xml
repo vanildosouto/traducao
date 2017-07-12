@@ -28,7 +28,7 @@
   &reftitle.examples;
   <para>
    <example>
-    <title><function>realpath_cache_size</function> </title>
+    <title>Exemplo de <function>realpath_cache_size</function></title>
     <programlisting role="php">
 <![CDATA[
 <?php
@@ -52,7 +52,8 @@ int(412)
    <simplelist>
     <member><function>realpath_cache_get</function></member>
     <member>
-     As opções de configurações de <link linkend="ini.realpath-cache-size">realpath_cache_size</link>
+     As opções de configurações 
+     de <link linkend="ini.realpath-cache-size">realpath_cache_size</link>
     </member>
    </simplelist>
   </para>
