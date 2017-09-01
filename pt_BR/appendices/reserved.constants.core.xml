@@ -63,7 +63,7 @@
      <listitem>
       <simpara>
        A versão atual do PHP como um inteiro, útil
-       para comparações de versão (exemplo: int(50207) na versão "5.2.7-extra").
+       para comparações entre versões (exemplo: int(50207) na versão "5.2.7-extra").
        Disponível a partir do PHP 5.2.7.
       </simpara>
      </listitem>
