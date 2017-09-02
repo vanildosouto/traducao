@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 335401 Maintainer: ae Status: ready --><!-- CREDITS: fernandoc,ae -->
+<!-- EN-Revision: 341282 Maintainer: ae Status: ready --><!-- CREDITS: fernandoc,ae -->
 <refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ob-start">
  <refnamediv>
   <refname>ob_start</refname>
@@ -114,7 +114,7 @@
       </para>
       <note>
        <para>
-        No PHP 4.0.4 <function>ob_gzhandler</function> foi introduzido para
+        A função <function>ob_gzhandler</function> existe para
         facilitar o envio de dados comprimidos no formato gz à navegadores que suportam
         páginas web compactadas. <function>ob_gzhandler</function> determina
         que tipo de codificação de conteúdos os navegadores podem aceitar e retorna
