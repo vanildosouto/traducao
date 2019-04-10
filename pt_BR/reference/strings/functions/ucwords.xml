@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: n/a Maintainer: fernandoc Status: ready -->
-<refentry xml:id="function.ucwords" xmlns="http://docbook.org/ns/docbook">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EN-Revision: 337118 Maintainer: ae Status: ready --><!-- CREDITS: fernandoc,@joelibaceta,ae -->
+<refentry xmlns="http://docbook.org/ns/docbook" xml:id="function.ucwords">
  <refnamediv>
   <refname>ucwords</refname> 
   <refpurpose>Converte para maiúsculas o primeiro caractere de cada palavra</refpurpose>
@@ -17,14 +17,12 @@
   </methodsynopsis>
   <para>
    Retorna uma string com o primeiro caractere de cada palavra em
-   <parameter>str</parameter> em maiúscula, se este caractere fizer 
-   parte do alfabeto.
+   <parameter>str</parameter> em maiúscula, se este caractere fizer parte do alfabeto.
   </para>
   <para>
    A definição de uma palavra é uma string de caracteres que é é 
    precedida de qualquer caractere listado no parâmetro delimitadores 
-   (Estes são: espaço, space, form-feed, newline, carriage return, 
-   horizontal tab, e vertical tab). 
+   (Estes são: espaço, space, form-feed, newline, carriage return, horizontal tab, e vertical tab). 
   </para>
  </refsect1>
 
@@ -42,11 +40,11 @@
     </varlistentry>
     <varlistentry>
      <term><parameter>delimiters</parameter></term>
-      <listitem>
-       <para>
-        O parâmetro opcional <parameter>delimiters</parameter> contém os caracteres separadores das palavras.
-       </para>
-      </listitem>
+     <listitem>
+      <para>
+       O parâmetro opcional <parameter>delimiters</parameter> contém os caracteres separadores das palavras.
+      </para>
+     </listitem>
     </varlistentry>
    </variablelist>
   </para>
@@ -102,6 +100,22 @@ $bar = ucwords(strtolower($bar)); // Hello World!
     </programlisting>
    </example>
   </para>
+
+  <para>
+   <example>
+    <title>Exemplo de <function>ucwords</function> com delimitador</title>
+    <programlisting role="php">
+<![CDATA[
+<?php
+$foo = 'hello|world!';
+$bar = ucwords($foo);             // Hello|world!
+
+$baz = ucwords($foo, "|");        // Hello|World!
+?>
+]]>
+    </programlisting>
+   </example>
+  </para>
  </refsect1>
 
  <refsect1 role="notes">
@@ -116,6 +130,7 @@ $bar = ucwords(strtolower($bar)); // Hello World!
     <member><function>strtoupper</function></member>
     <member><function>strtolower</function></member>
     <member><function>ucfirst</function></member>
+    <member><function>mb_convert_case</function></member>
    </simplelist>
   </para>
  </refsect1>
