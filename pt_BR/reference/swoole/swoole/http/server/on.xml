@@ -4,7 +4,7 @@
 <refentry xml:id="swoole-http-server.on" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>Swoole\Http\Server::on</refname>
-  <refpurpose>Vincular a função de retorno (callback) ao servidor HTTP pelo nome do evento.</refpurpose>
+  <refpurpose>Vincula a função de retorno (callback) ao servidor HTTP pelo nome do evento.</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
