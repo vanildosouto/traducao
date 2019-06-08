@@ -1,0 +1,8 @@
+language: php
+
+before_script:
+  - svn checkout --quiet https://svn.php.net/repository/phpdoc/doc-base/trunk doc-base
+  - svn checkout --quiet https://svn.php.net/repository/phpdoc/en/trunk en
+
+script:
+  - php doc-base/configure.php --enable-xml-details --disable-libxml-check --redirect-stderr-to-stdout --with-lang=pt_BR
