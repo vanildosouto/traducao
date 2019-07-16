@@ -207,7 +207,7 @@
        <row>
         <entry>5.2.1</entry>
         <entry>
-         <constant>FILTER_VALIDATE_URL</constant> agora usa implicitamente
+         <constant>FILTER_VALIDATE_URL</constant> agora implicitamente usa
          <constant>FILTER_FLAG_SCHEME_REQUIRED</constant> e
          <constant>FILTER_FLAG_HOST_REQUIRED</constant>.
         </entry>
@@ -226,14 +226,14 @@
   <title>Sanitize filters</title>
    <para>
     <table>
-     <title>List of filters for sanitization</title>
+     <title>Lista de filtros para sanitização (Limpeza)</title>
      <tgroup cols="5">
       <thead>
        <row>
         <entry>ID</entry>
-        <entry>Name</entry>
+        <entry>Nome</entry>
         <entry>Flags</entry>
-        <entry>Description</entry>
+        <entry>Descrição</entry>
        </row>
       </thead>
       <tbody>
@@ -242,7 +242,7 @@
         <entry>"email"</entry>
         <entry></entry>
         <entry>
-         Remove all characters except letters, digits and
+          Remova todos os caracteres, exceto letras, dígitos e
          <literal>!#$%&amp;'*+-=?^_`{|}~@.[]</literal>.
         </entry>
        </row>
@@ -256,13 +256,13 @@
          <constant>FILTER_FLAG_ENCODE_LOW</constant>,
          <constant>FILTER_FLAG_ENCODE_HIGH</constant>
         </entry>
-        <entry>URL-encode string, optionally strip or encode special characters.</entry>
+        <entry>URL-encode string, opcionalmente tira ou codifica caracteres especiais.</entry>
        </row>
        <row>
         <entry><constant>FILTER_SANITIZE_MAGIC_QUOTES</constant></entry>
         <entry>"magic_quotes"</entry>
         <entry></entry>
-        <entry>Apply <function>addslashes</function>.</entry>
+        <entry>Aplique <function>addslashes</function>.</entry>
        </row>
        <row>
         <entry><constant>FILTER_SANITIZE_NUMBER_FLOAT</constant></entry>
@@ -273,8 +273,8 @@
          <constant>FILTER_FLAG_ALLOW_SCIENTIFIC</constant>
         </entry>
         <entry>
-         Remove all characters except digits, <literal>+-</literal> and
-         optionally <literal>.,eE</literal>.
+         Remove todos os caracteres, exceto dígitos, <literal>+-</literal> e
+         opcionalmente <literal>.,eE</literal>.
         </entry>
        </row>
        <row>
@@ -282,7 +282,7 @@
         <entry>"number_int"</entry>
         <entry></entry>
         <entry>
-         Remove all characters except digits, plus and minus sign.
+         Remove todos os caracteres, exceto os dígitos, sinal de mais e menos.
         </entry>
        </row>
        <row>
@@ -295,9 +295,9 @@
          <constant>FILTER_FLAG_ENCODE_HIGH</constant>
         </entry>
         <entry>
-         HTML-escape <literal>'"&lt;&gt;&amp;</literal> and characters with
-         ASCII value less than 32, optionally strip or encode other special
-         characters.
+         HTML-escape <literal>'"&lt;&gt;&amp;</literal> e caracteres com
+         valor ASCII menor que 32, opcionalmente, tira ou codifica outros
+         caracteres especiais.
         </entry>
        </row>
        <row>
@@ -307,11 +307,11 @@
          <constant>FILTER_FLAG_NO_ENCODE_QUOTES</constant>,
         </entry>
         <entry>
-         Equivalent to calling <function>htmlspecialchars</function> with <constant>ENT_QUOTES</constant> set. Encoding quotes can
-         be disabled by setting <constant>FILTER_FLAG_NO_ENCODE_QUOTES</constant>. Like <function>htmlspecialchars</function>, this
-         filter is aware of the <link linkend="ini.default-charset">default_charset</link> and if a sequence of bytes is detected that
-         makes up an invalid character in the current character set then the entire string is rejected resulting in a 0-length string.
-         When using this filter as a default filter, see the warning below about setting the default flags to 0.
+         Equivalente a chamar <function>htmlspecialchars</function> junto com <constant>ENT_QUOTES</constant>. Citações de codificação podem
+         ser desabilitadas <constant>FILTER_FLAG_NO_ENCODE_QUOTES</constant>. Como <function>htmlspecialchars</function>, este
+         filtro está ciente do <link linkend="ini.default-charset">default_charset</link> e se uma sequência de bytes for detectada
+         cria um caractere inválido no conjunto de caracteres atual e, em seguida, a cadeia inteira é rejeitada, resultando em uma cadeia de caracteres de comprimento igual a 0
+         Ao usar esse filtro como um filtro padrão, consulte o aviso abaixo sobre como definir os sinalizadores padrão como 0
         </entry>
        </row>
        <row>
@@ -326,20 +326,20 @@
          <constant>FILTER_FLAG_ENCODE_HIGH</constant>,
          <constant>FILTER_FLAG_ENCODE_AMP</constant>
         </entry>
-        <entry>Strip tags, optionally strip or encode special characters.</entry>
+        <entry>Retira tags, opcionalmente, tira ou codifica caracteres especiais.</entry>
        </row>
        <row>
         <entry><constant>FILTER_SANITIZE_STRIPPED</constant></entry>
         <entry>"stripped"</entry>
         <entry></entry>
-        <entry>Alias of "string" filter.</entry>
+        <entry>Alias do filtro "string".</entry>
        </row>
        <row>
         <entry><constant>FILTER_SANITIZE_URL</constant></entry>
         <entry>"url"</entry>
         <entry></entry>
         <entry>
-         Remove all characters except letters, digits and
+         Remove todos os caracteres, exceto letras, dígitos e
          <literal>$-_.+!*'(),{}|\\^~[]`&lt;&gt;#%";/?:@&amp;=</literal>.
         </entry>
        </row>
@@ -355,8 +355,8 @@
          <constant>FILTER_FLAG_ENCODE_AMP</constant>
         </entry>
         <entry>
-         Do nothing, optionally strip or encode special characters. This
-         filter is also aliased to <constant>FILTER_DEFAULT</constant>.
+         Não faz nada, opcionalmente descasque ou codifique caracteres especiais. este
+         filtro também é alias do <constant>FILTER_DEFAULT</constant>.
         </entry>
        </row>
       </tbody>
@@ -365,12 +365,12 @@
    </para>
    <warning>
      <para>
-       When using one of these filters as a default filter either through your ini file
-       or through your web server's configuration, the default flags is set to 
-       <constant>FILTER_FLAG_NO_ENCODE_QUOTES</constant>.  You need to explicitly set
-       filter.default_flags to 0 to have quotes encoded by default. Like this:
+       Ao usar um desses filtros como um filtro padrão através do seu arquivo ini
+       ou através da configuração do seu servidor web, os sinalizadores padrão são definidos para
+       <constant>FILTER_FLAG_NO_ENCODE_QUOTES</constant>.  Você precisa definir explicitamente
+       filter.default_flags para 0 ter aspas codificadas por padrão. Assim:
        <example>
-         <title>Configuring the default filter to act like htmlspecialchars</title>
+         <title>Configurando o filtro padrão para agir como htmlspecialchars</title>
          <programlisting role="php">
 <![CDATA[
 filter.default = full_special_chars
@@ -396,8 +396,8 @@ filter.default_flags = 0
        <row>
         <entry>5.2.11/5.3.1</entry>
         <entry>
-         Slashes (<literal>/</literal>) are removed by
-         <constant>FILTER_SANITIZE_EMAIL</constant>. Prior they were retained.
+         Barras (<literal>/</literal>) são removidos por
+         <constant>FILTER_SANITIZE_EMAIL</constant>. Antes eles eram mantidos.
         </entry>
        </row>
       </tbody>
