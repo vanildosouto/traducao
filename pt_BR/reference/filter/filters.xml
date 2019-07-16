@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- $Revision: 346911 $ -->
+<!-- EN-Revision: 346911 Maintainer: none Status: ready --><!-- CREDITS: @everaldofilho -->
 <chapter xml:id="filter.filters" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <title>Tipos de filtros</title>
 
  <!--Validate filters: {{{-->
  <section xml:id="filter.filters.validate">
-  <title>Validar filtros</title>
+  <title>Filtros de validação</title>
    <para>
     <table>
      <title>Listagem de filtros para validação</title>
@@ -223,7 +223,7 @@
 
  <!-- Sanitize filters: {{{-->
  <section xml:id="filter.filters.sanitize">
-  <title>Sanitize filters</title>
+  <title>Filtros de Sanitize (Limpeza)</title>
    <para>
     <table>
      <title>Lista de filtros para sanitização (Limpeza)</title>
@@ -411,27 +411,27 @@ filter.default_flags = 0
 
  <!-- Other filters: {{{-->
  <section xml:id="filter.filters.misc">
-  <title>Other filters</title>
+  <title>Outros filtros</title>
    <para>
     <table>
-     <title>List of miscellaneous filters</title>
+     <title>Lista de filtros diversos</title>
      <tgroup cols="5">
       <thead>
        <row>
         <entry>ID</entry>
-        <entry>Name</entry>
-        <entry>Options</entry>
+        <entry>Nome</entry>
+        <entry>Opções</entry>
         <entry>Flags</entry>
-        <entry>Description</entry>
+        <entry>Descrição</entry>
        </row>
       </thead>
       <tbody>
        <row>
         <entry><constant>FILTER_CALLBACK</constant></entry>
         <entry>"callback"</entry>
-        <entry><type>callable</type> function or method</entry>
-        <entry>All flags are ignored</entry>
-        <entry>Call user-defined function to filter data.</entry>
+        <entry><type>callable</type> função ou método</entry>
+        <entry>Todas as flags são ignoradas</entry>
+        <entry>Chama a função definida pelo usuário para filtrar os dados.</entry>
        </row>
       </tbody>
      </tgroup>
@@ -442,17 +442,17 @@ filter.default_flags = 0
 
  <!-- Filter flags: {{{-->
  <section xml:id="filter.filters.flags">
-  <title>Filter flags</title>
+  <title>Filtro flags</title>
   
   <para>
    <table>
-    <title>List of filter flags</title>
+    <title>Lista de sinalizadores de filtro</title>
     <tgroup cols="3">
      <thead>
       <row>
        <entry>ID</entry>
-       <entry>Used with</entry>
-       <entry>Description</entry>
+       <entry>Usado com</entry>
+       <entry>Descrição</entry>
       </row>
      </thead>
      <tbody>
@@ -465,7 +465,7 @@ filter.default_flags = 0
         <constant>FILTER_UNSAFE_RAW</constant>
        </entry>
        <entry>
-        Strips characters that have a numerical value &lt;32.
+        Retira caracteres que têm um valor numérico &lt;32.
        </entry>
       </row>
       <row>
@@ -477,7 +477,7 @@ filter.default_flags = 0
         <constant>FILTER_UNSAFE_RAW</constant>
        </entry>
        <entry>
-        Strips characters that have a numerical value &gt;127.
+        Retira caracteres que têm um valor numérico &gt;127.
        </entry>
       </row>
       <row>
@@ -489,7 +489,7 @@ filter.default_flags = 0
         <constant>FILTER_UNSAFE_RAW</constant>
        </entry>
        <entry>
-        Strips backtick characters.
+        Retira crase dos caracteres.
        </entry>
       </row>
       <row>
@@ -498,8 +498,8 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_NUMBER_FLOAT</constant>
        </entry>
        <entry>
-        Allows a period (<literal>.</literal>) as a fractional separator in
-        numbers.
+        Permite um ponto (<literal>.</literal>) como um separador fracionário em
+        números.
        </entry>
       </row>
       <row>
@@ -509,8 +509,8 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_FLOAT</constant>
        </entry>
        <entry>
-        Allows a comma (<literal>,</literal>) as a thousands separator in
-        numbers.
+        Permite uma vírgula (<literal>,</literal>) como um separador de milhares em 
+        números.
        </entry>
       </row>
       <row>
@@ -519,8 +519,8 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_NUMBER_FLOAT</constant>
        </entry>
        <entry>
-        Allows an <literal>e</literal> or <literal>E</literal> for scientific
-        notation in numbers.
+        Permite um <literal>e</literal> ou <literal>E</literal> para fins científicos
+        notação em números.
        </entry>
       </row>
       <row>
@@ -529,8 +529,8 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_STRING</constant>
        </entry>
        <entry>
-        If this flag is present, single (<literal>'</literal>) and double
-        (<literal>"</literal>) quotes will not be encoded.
+        Se este flag estiver presente, Aspas simples (<literal>'</literal>) e duplas
+        (<literal>"</literal>) duplas não serão codificadas.
        </entry>
       </row>
       <row>
@@ -541,7 +541,7 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_RAW</constant>
        </entry>
        <entry>
-        Encodes all characters with a numerical value &lt;32.
+        Codifica todos os caracteres com um valor numérico &lt;32.
        </entry>
       </row>
       <row>
@@ -553,7 +553,7 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_RAW</constant>
        </entry>
        <entry>
-        Encodes all characters with a numerical value &gt;127.
+        Codifica todos os caracteres com um valor numérico &gt;127.
        </entry>
       </row>
       <row>
@@ -563,7 +563,7 @@ filter.default_flags = 0
         <constant>FILTER_SANITIZE_RAW</constant>
        </entry>
        <entry>
-        Encodes ampersands (<literal>&amp;</literal>).
+        Codifica e comercial (<literal>&amp;</literal>).
        </entry>
       </row>
       <row>
@@ -572,7 +572,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_BOOLEAN</constant>
        </entry>
        <entry>
-        Returns &null; for unrecognized boolean values.
+        Retorna &null; para valores booleanos não reconhecidos.
        </entry>
       </row>
       <row>
@@ -581,8 +581,8 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_INT</constant>
        </entry>
        <entry>
-        Regards inputs starting with a zero (<literal>0</literal>) as octal
-        numbers. This only allows the succeeding digits to be
+        Considera entradas começando com zero (<literal>0</literal>) como 
+        números octal. Isso só permite que os dígitos seguintes sejam
         <literal>0-7</literal>.
        </entry>
       </row>
@@ -592,9 +592,9 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_INT</constant>
        </entry>
        <entry>
-        Regards inputs starting with <literal>0x</literal> or
-        <literal>0X</literal> as hexadecimal numbers. This only allows
-        succeeding characters to be <literal>a-fA-F0-9</literal>.
+        Atenciosamente entradas começando com <literal>0x</literal> ou
+        <literal>0X</literal> como números hexadecimais. Isso só permite
+        que os caracteres seguintes sejam <literal>a-fA-F0-9</literal>.
        </entry>
       </row>
       <row>
@@ -603,7 +603,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_EMAIL</constant>
        </entry>
        <entry>
-        Allows the local part of the email address to contain Unicode characters.
+        Permite que a parte local do endereço de e-mail contenha caracteres Unicode.
        </entry>
       </row>
       <row>
@@ -612,7 +612,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_IP</constant>
        </entry>
        <entry>
-        Allows the IP address to be in IPv4 format.
+        Permite que o endereço IP esteja no formato IPv4.
        </entry>
       </row>
       <row>
@@ -621,7 +621,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_IP</constant>
        </entry>
        <entry>
-        Allows the IP address to be in IPv6 format.
+        Permite que o endereço IP esteja no formato IPv6.
        </entry>
       </row>
       <row>
@@ -631,13 +631,13 @@ filter.default_flags = 0
        </entry>
        <entry>
         <para>
-         Fails validation for the following private IPv4 ranges:
-         <literal>10.0.0.0/8</literal>, <literal>172.16.0.0/12</literal> and
+         Falha na validação para os seguintes intervalos de IPv4 privados:
+         <literal>10.0.0.0/8</literal>, <literal>172.16.0.0/12</literal> e
          <literal>192.168.0.0/16</literal>.
         </para>
         <para>
-         Fails validation for the IPv6 addresses starting with
-         <literal>FD</literal> or <literal>FC</literal>.
+         Falha na validação dos endereços IPv6 que começam com
+         <literal>FD</literal> ou <literal>FC</literal>.
         </para>
        </entry>
       </row>
@@ -648,14 +648,14 @@ filter.default_flags = 0
        </entry>
        <entry>
         <para>
-        Fails validation for the following reserved IPv4 ranges:
+         Falha na validação para os seguintes intervalos de IPv4 reservados:
         <literal>0.0.0.0/8</literal>, <literal>169.254.0.0/16</literal>,
-        <literal>127.0.0.0/8</literal> and <literal>240.0.0.0/4</literal>.
+        <literal>127.0.0.0/8</literal> e <literal>240.0.0.0/4</literal>.
         </para>
         <para>
-         Fails validation for the following reserved IPv6 ranges:
+         Falha na validação para os seguintes intervalos reservados de IPv6:
          <literal>::1/128</literal>, <literal>::/128</literal>,
-         <literal>::ffff:0:0/96</literal> and <literal>fe80::/10</literal>.
+         <literal>::ffff:0:0/96</literal> e <literal>fe80::/10</literal>.
         </para>
        </entry>
       </row>
@@ -665,7 +665,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_URL</constant>
        </entry>
        <entry>
-        Requires the <acronym>URL</acronym> to contain a scheme part.
+        Requer que a <acronym>URL</acronym> contenha uma parte do esquema.
        </entry>
       </row>
       <row>
@@ -674,7 +674,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_URL</constant>
        </entry>
        <entry>
-        Requires the <acronym>URL</acronym> to contain a host part.
+        Requer que a <acronym>URL</acronym> contenha uma parte do host.
        </entry>
       </row>
       <row>
@@ -683,7 +683,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_URL</constant>
        </entry>
        <entry>
-        Requires the <acronym>URL</acronym> to contain a path part.
+        Requer que o <acronym>URL</acronym> contenha uma parte do caminho.
        </entry>
       </row>
       <row>
@@ -692,7 +692,7 @@ filter.default_flags = 0
         <constant>FILTER_VALIDATE_URL</constant>
        </entry>
        <entry>
-        Requires the <acronym>URL</acronym> to contain a query string.
+        Requer que o <acronym>URL</acronym> contenha uma string de consulta.
        </entry>
       </row>
       <row>
@@ -700,7 +700,7 @@ filter.default_flags = 0
        <entry>
        </entry>
        <entry>
-        Requires the value to be scalar.
+        Requer que o valor seja scalar.
        </entry>
       </row>
       <row>
@@ -708,7 +708,7 @@ filter.default_flags = 0
        <entry>
        </entry>
        <entry>
-        Requires the value to be an array.
+        Requer que o valor seja uma array.
        </entry>
       </row>
       <row>
@@ -716,8 +716,8 @@ filter.default_flags = 0
        <entry>
        </entry>
        <entry>
-        If the value is a scalar, it is treated as array with the scalar value
-        as only element.
+        Se o valor é um scalar, é tratado como array com o valor scalar
+        como único elemento.
        </entry>
       </row>
      </tbody>
@@ -740,26 +740,26 @@ filter.default_flags = 0
        <row>
         <entry>7.3.0</entry>
         <entry>
-         The explicit usage of <constant>FILTER_FLAG_SCHEME_REQUIRED</constant>
-         and <constant>FILTER_FLAG_HOST_REQUIRED</constant> has been deprecated.
+         O uso explícito de <constant>FILTER_FLAG_SCHEME_REQUIRED</constant>
+         e <constant>FILTER_FLAG_HOST_REQUIRED</constant> tornou-se obsoleta.
         </entry>
        </row>
        <row>
         <entry>7.1.0</entry>
         <entry>
-         <constant>FILTER_FLAG_EMAIL_UNICODE</constant> has been added.
+         <constant>FILTER_FLAG_EMAIL_UNICODE</constant> foi adicionado.
         </entry>
        </row>
        <row>
         <entry>5.3.2</entry>
         <entry>
-         <constant>FILTER_FLAG_STRIP_BACKTICK</constant> has been added.
+         <constant>FILTER_FLAG_STRIP_BACKTICK</constant> foi adicionado.
         </entry>
        </row>
        <row>
         <entry>5.2.10</entry>
         <entry>
-         <constant>FILTER_FLAG_NO_RES_RANGE</constant> supports also IPv6 addresses.
+         <constant>FILTER_FLAG_NO_RES_RANGE</constant> suporta também endereços IPv6.
         </entry>
        </row>
       </tbody>
