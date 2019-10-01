@@ -153,24 +153,24 @@ icacls C:\inetpub\wwwroot\upload /grant IUSR:(OI)(CI)(M)
     </step>
    </procedure>
    <mediaobject>
-    <alt>Setting index.php as default document for IIS</alt>
+    <alt>Definindo index.php como o documento padrão no IIS</alt>
     <imageobject>
-     <imagedata fileref="en/install/windows/figures/iis6defaultdoc.png" width="659" depth="465" />
+     <imagedata fileref="pt_BR/install/windows/figures/iis6defaultdoc.png" width="659" depth="465" />
     </imageobject>
    </mediaobject>
   </para>
  </sect3>
  <sect3 xml:id="install.windows.legacy.iis6.recycling">
-  <title>FastCGI and PHP Recycling configuration</title>
+  <title>Configuração de FastCGI e reciclagem PHP</title>
   <para>
-   Configure IIS FastCGI extension settings for recycling of PHP processes by using the commands shown below. 
-   The FastCGI setting <varname>instanceMaxRequests</varname> controls how many requests will be processed by a single 
-   <filename>php-cgi.exe</filename> process before FastCGI extension shuts it down. The PHP environment variable 
-   <varname>PHP_FCGI_MAX_REQUESTS</varname> controls how many requests a single <filename>php-cgi.exe</filename> process 
-   will handle before it recycles itself. Make sure that the value specified for FastCGI <varname>InstanceMaxRequests</varname>
-   setting is less than or equal to the value specified for <varname>PHP_FCGI_MAX_REQUESTS</varname>.
+   Configure a extensão FastCGI para reciclagem dos processos PHP usando os comandos a seguir.
+   A configuração FastCGI <varname>instanceMaxRequests</varname> controla quantos requisição serão processadas por um único processo 
+   <filename>php-cgi.exe</filename> antes que a extensão FastCGI se encerre. A variável de ambiente
+   <varname>PHP_FCGI_MAX_REQUESTS</varname> controla quantas requisições um único processo <filename>php-cgi.exe</filename> 
+   manipulará antes que ele se recicle. Certifique-se que o valor especificado para a configuração FastCGI <varname>InstanceMaxRequests</varname>
+   seja menor ou igual ao valor especificado para <varname>PHP_FCGI_MAX_REQUESTS</varname>.
    <example>
-    <title>Configuring FastCGI and PHP recycling</title>
+    <title>Configuração de FastCGI e reciclagem PHP</title>
     <programlisting>
 <![CDATA[
 cscript %windir%\system32\inetsrv\fcgiconfig.js -set -section:"PHP" ^
@@ -184,14 +184,14 @@ cscript %windir%\system32\inetsrv\fcgiconfig.js -set -section:"PHP" ^
   </para>
  </sect3>
  <sect3 xml:id="install.windows.legacy.iis6.timeouts">
-  <title>Configuring FastCGI timeout settings</title>
+  <title>Configurando timeout para FastCGI</title>
   <para>
-   Increase the timeout settings for FastCGI extension if there are applications that have long running PHP scripts. 
-   The two settings that control timeouts are <varname>ActivityTimeout</varname> and <varname>RequestTimeout</varname>. 
-   Refer to <link xlink:href="&url.iis.fastcgi.settings;">Configuring FastCGI Extension for IIS 6.0</link> for more 
-   information about those settings.
+   Aumente as configurações de timeout para a extensão FastCGI caso existam aplicações com scripts de longa execução.
+   As duas configurações que controlam timeout são <varname>ActivityTimeout</varname> e <varname>RequestTimeout</varname>. 
+   Verifique <link xlink:href="&url.iis.fastcgi.settings;">Configurando extensão FastCGI para IIS 6.0</link> para mais
+   informações sobre estas configurações.
    <example>
-    <title>Configuring FastCGI timeout settings</title>
+    <title>Configurando timeout para FastCGI</title>
     <programlisting>
 <![CDATA[
 cscript %windir%\system32\inetsrv\fcgiconfig.js -set -section:"PHP" ^
@@ -205,17 +205,17 @@ cscript %windir%\system32\inetsrv\fcgiconfig.js -set -section:"PHP" ^
    </para>
  </sect3>
  <sect3 xml:id="install.windows.legacy.iis6.phpinilocation">
-  <title>Changing the Location of <filename>php.ini</filename> file</title>
+  <title>Alterando a localização do arquivo <filename>php.ini</filename> </title>
   <para>
-   PHP searches for <filename>php.ini</filename> file in 
-   <link linkend="configuration.file">several locations</link> and it is 
-   possible to change the default locations of <filename>php.ini</filename> 
-   file by using <varname>PHPRC</varname> environment variable. To instruct PHP 
-   to load the configuration file from a custom location run the command shown below. 
-   The absolute path to the directory with <filename>php.ini</filename> file should be 
-   specified as a value of <varname>PHPRC</varname> environment variable.
+   O PHP procura pelo arquivo <filename>php.ini</filename> em
+   <link linkend="configuration.file">diversas localizaçõe</link> e é  
+   possível alterar a configuração padrão do arquivo <filename>php.ini</filename> 
+   usando a variável de ambiente <varname>PHPRC</varname>. Para instruir o PHP  
+   a carregar o arquivo de configuração de uma localização customizada execute o comando exibido abaixo.
+   O caminho absoluto para o diretório que contém o arquivo <filename>php.ini</filename> deve ser 
+   especificado como um valor na variável de ambiente <varname>PHPRC</varname>.
    <example>
-    <title>Changing the location of <filename>php.ini</filename> file</title>
+    <title>Alterando a localização do arquivo <filename>php.ini</filename> </title>
     <programlisting>
 <![CDATA[
 cscript %windir%\system32\inetsrv\fcgiconfig.js -set -section:"PHP" ^
