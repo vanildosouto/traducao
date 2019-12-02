@@ -141,7 +141,7 @@ strlen
 strlen -- Obtém o tamanho da string
 
 Descrição
-int strlen ( string $string )
+strlen ( string $string ) : int
 
 Retorna o tamanho da string dada.
 ]]>
@@ -176,22 +176,22 @@ Retorna o tamanho da string dada.
         </row>
         <row>
          <entry>
-          int
-         </entry>
-         <entry>
-          Tipo do valor que esta função retorna, que é um
-          <type>integer</type> (isto é, o comprimento de uma string é
-          medido em números).
-         </entry>
-        </row>
-        <row>
-         <entry>
           ( string $string )
          </entry>
          <entry>
           O primeiro (e neste caso, o único) parâmetro/argumento para esta
           função é chamado <parameter>string</parameter>, e é uma
           <type>string</type>.
+         </entry>
+        </row>
+        <row>
+         <entry>
+          int
+         </entry>
+         <entry>
+          Tipo do valor que esta função retorna, que é um
+          <type>integer</type> (isto é, o comprimento de uma string é
+          medido em números).
          </entry>
         </row>
        </tbody>
