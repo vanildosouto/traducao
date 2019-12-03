@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 335899 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, fabioluciano -->
+<!-- EN-Revision: 345238 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, fabioluciano, @geekcom -->
 <sect1 xml:id="language.pseudo-types">
  <title>Pseudo-tipos e variáveis utilizadas nesta documentação</title>
-
+ <para>
+  Pseudo-tipos são palavras-chave usadas na documentação do PHP para especificar os tipos ou valores que um parâmetro pode ter. Observe que eles não são primitivos da linguagem PHP. Portanto, você não pode usar pseudo-tipos como dicas de tipo em suas próprias funções personalizadas.
+ </para>
  <sect2 xml:id="language.types.mixed">
   <title>mixed</title>
 
@@ -33,7 +35,7 @@
   <title>callback</title>
 
   <para>
-   O psedo-tipo <type>callback</type> era utilizado nesta documentação antes da introdução
+   O pseudo-tipo <type>callback</type> era utilizado nesta documentação antes da introdução
    da declaração de tipo <type>callable</type> pelo PHP 5.4. Isso significa exatamente
    o mesmo.
   </para>
