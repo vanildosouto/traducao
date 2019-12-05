@@ -402,7 +402,7 @@ Fazendo uma taça de framboesa azeda.
         <row>
          <entry><literal>self</literal></entry>
          <entry>
-          O parâmetro precisa ser um &instanceof; da mesma classe do métoodo
+          O parâmetro precisa ser um &instanceof; da mesma classe do método
           onde a função está definida. Somente pode ser utilizado em métodos de classe
           e instância.
          </entry>
