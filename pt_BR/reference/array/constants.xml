@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 334988 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, fabioluciano -->
+<!-- EN-Revision: 341282 Maintainer: fabioluciano Status: ready --><!-- CREDITS: felipe, fabioluciano, @geekcom -->
 <appendix xml:id="array.constants" xmlns="http://docbook.org/ns/docbook">
  &reftitle.constants;
  &extension.constants.core;
@@ -107,7 +107,7 @@
    <listitem>
     <simpara>
      <constant>SORT_LOCALE_STRING</constant> é utilizado para comparar itens como
-     strings, baseado no local atual. Adicionado no PHP 4.4.0 e 5.0.2.
+     strings, baseado no local atual. Adicionado no 5.0.2.
     </simpara>
    </listitem>
   </varlistentry>
