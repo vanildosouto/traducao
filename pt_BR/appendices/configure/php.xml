@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 328423 Maintainer: ae Status: ready --><!-- CREDITS: klaussilveira -->
+<!-- EN-Revision: 344857 Maintainer: ae Status: ready --><!-- CREDITS: klaussilveira, geekcom -->
  <sect3 xml:id="configure.options.php" xmlns="http://docbook.org/ns/docbook">
   <title>Opções do PHP</title>
   <variablelist>
