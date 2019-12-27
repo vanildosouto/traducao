@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EN-Revision: 340973 Maintainer: none Status: ready --><!-- CREDITS: @mauriciofauth -->
+<!-- EN-Revision: 340973 Maintainer: mauricio Status: ready -->
 
 <appendix xml:id="migration71" xmlns="http://docbook.org/ns/docbook" xmlns:phd="http://www.php.net/ns/phd">
  <title>Migrando do PHP 7.0.x para o PHP 7.1.x</title>
