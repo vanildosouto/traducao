@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- EN-Revision: 297078 Maintainer: diogo Status: ready -->
+<!-- EN-Revision: 334762 Maintainer: diogo Status: ready -->
 <refentry xml:id="function.spl-classes" xmlns="http://docbook.org/ns/docbook">
  <refnamediv>
   <refname>spl_classes</refname>
   <refpurpose>Retorna as classes da SPL disponíveis</refpurpose>
  </refnamediv>
-
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
@@ -14,6 +13,18 @@
   </methodsynopsis>
   <para>
    Esta função retorna um array com as classes da SPL disponíveis atualmente.
+  </para>
+ </refsect1>
+
+ <refsect1 role="parameters">
+  &reftitle.parameters;
+  &no.function.parameters;
+ </refsect1>
+
+ <refsect1 role="returnvalues">
+  &reftitle.returnvalues;
+  <para>
+   Retorna um <type>array</type> contendo as classes SPL disponíveis.
   </para>
  </refsect1>
 
